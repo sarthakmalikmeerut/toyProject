@@ -19,8 +19,8 @@ hello_world_instance = HelloWorld()
 
 # GET request to read two inputs from query parameters
 @app.get("/zero_shot")
-def zero_shot(input1: str, input2: str):
-    return {"message": hello_world_instance.zero_shot(input1, input2)}
+def zero_shot(CGPA: int, IQ: int):
+    return {"message": hello_world_instance.zero_shot(CGPA, IQ)}
 
 # Run the Uvicorn server with the specified port
 if __name__ == "__main__":
