@@ -1,0 +1,4 @@
+ports:
+  http: 5500
+  websocket: 8001
+title: "My FastAPI App"
